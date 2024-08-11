@@ -1,0 +1,228 @@
+body{
+   
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden ;
+}
+
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(38, 48, 39);
+    background-position: center;
+    overflow: hidden;
+}
+
+.bg{
+    background-color: #6d4c3d;
+}
+
+.logo{
+    position:absolute;
+    top: 10px;
+    z-index: 10000000;
+    margin:0;
+    width: 150px;
+    height:150px;
+}
+.start{
+     z-index: 20000px;
+     color:rgb(255, 255, 255);
+     position: sticky;
+     top: -5050px;
+     padding: 7px;
+     background: 0;
+     margin-left: 1307px;
+     font-size: large;
+}
+
+
+.log{
+    color:rgb(255, 239, 201);
+    text-decoration: none;
+}
+
+
+.bgimg{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.title-text{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: #ffefc9;
+    text-shadow: 1px 4px 8px rgba(255, 239, 201, 0.737);
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-stretch:ultra-expanded;
+    font-size: 200px;
+    letter-spacing: 6.5px;
+    margin-bottom: -35%;
+    margin-top: 0.1%;
+    text-wrap: nowrap;
+    
+    animation: title linear forwards;
+    animation-timeline: view() ;
+    animation-range: exit -550px;
+    transform-origin: left;
+    animation-duration: 1s;  
+}
+
+
+@keyframes title {
+    25% {opacity: 1; scale: 0.5;}
+    85% {opacity: 0.1; scale: 5 ;} 
+    100% {opacity: 0.1; scale: 10 ;} 
+}
+
+
+.navigation{
+    background-color: #6d4c3d;
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 100;
+    position: relative;
+}
+
+
+.navigation a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    margin: 5px;
+    padding: 7px;
+    opacity: 0;
+    transform: translateX(10px);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+.navigation a:hover{
+    border-style: solid;
+    margin: 1.5px;
+    font-weight: 500;
+    font-size: 90px ;
+    border-radius: 30px;
+    border-color: #D0f1bf;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.15s;
+    font-family: "Cormorant", serif;
+    cursor:p;
+    text-transform: capitalize;
+    padding: 17px;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+
+
+.about {  animation: fadeInUp 0.5s ease forwards;
+    animation-timeline: scroll() ; 
+    animation-range: 18%; }
+
+.articles {  animation: fadeInUp 0.5s ease forwards;
+    animation-timeline: scroll() ; 
+    animation-range: 36%;}
+
+.history {  animation: fadeInUp 0.5s ease forwards;
+    animation-timeline: scroll() ;
+    animation-range: 54%;}
+
+.help-us {  animation: fadeInUp 0.5s ease forwards;
+    animation-timeline: scroll() ;
+    animation-range: 72%;}
+.active-crisis{  animation: fadeInUp 0.5s ease forwards;
+    animation-timeline: scroll() ;
+    animation-range: 89%;}
+
+@keyframes fadeUpTranslate 
+{
+   30% {
+        opacity: 1;
+        transform:translateY(0px);
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        scale: 1;
+        }
+    
+        
+    70% {
+        opacity: 1;
+        transform:translateY(-50px);
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        scale: 1.05;
+        }
+    100% {
+        opacity: 1;
+        transform:translateY(0px);
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        scale: 1;
+
+        }
+}
+
+
+.meditation-img{
+        margin-left:905px;
+        margin-top: -675px;
+        height: 600px;
+        width: 500px;
+        position: relative;
+        z-index: 1000;
+        opacity: 1;
+        animation: fadeUpTranslate 3s linear infinite;
+        
+        
+    }
+ 
+
+
+.quiz{ 
+    border-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-left:1110px;
+    padding: 20px;
+    color:rgb(255, 255, 255);
+    background-color: rgba(119, 44, 3, 0.75);
+    width: fit-content;
+    position: relative;
+    margin-top: -200px;
+    z-index: 100000;
+    font-size: large;
+}
+
+.rev{
+    border: 3px;
+    border-color: rgb(255, 239, 201);
+    box-shadow: 0 2px 4px 0 #ffffff;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+}
+
