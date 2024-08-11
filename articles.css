@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    background-color: rgb(49, 52, 61);
+    transition: 0.5s;
+
+}
+
+body{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    margin-left: 70px;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    width: 39%;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 140px;
+}
+
+.card:hover{
+    width: 250%;
+    height: 150%;
+    min-width: 150%;
+}
+
+.card .images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 140px;
+}
+
+.card:hover .image {
+    transform: scale(1.2);
+}
+
+
+.card .layer {
+    width: 1960px;
+    position: absolute;
+    bottom: 100px;
+    margin-top: 500px;
+    padding: 20px;
+    opacity: 0;
+    min-width: 140px;
+}
+
+.card .layer .info{
+   width: 30%;
+   height: 20%;
+  
+}
+.card:hover .layer {
+    opacity: 1;
+}
+.info p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 15px;
+    z-index: 1;
+
+}
+
+.heading{
+  font-size: 50px;
+  margin-top: 61px;
+  text-align: right;
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navigation{
+    list-style: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5%;
+    padding: 7px;
+    margin-left: -190px;
+    text-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+   
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #cbad9e;
+    font-size: 20px;
+}
+
+.title-nav{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-right: 40%;
+    font-weight: 500;
+    font-size: 21px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navigation a:hover{
+    border-style: solid;
+    margin: 1.5px;
+    font-weight: 500;
+
+    border-radius: 30px;
+    border-color: #e3f7d9;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.15s;
+    font-family: "Cormorant", serif;
+    cursor:p;
+    text-transform: capitalize;
+    padding: 17px;
+}

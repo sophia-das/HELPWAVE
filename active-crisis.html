@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>active crisis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="active-crisis.css">
+</header>
+<body>
+    <nav>
+      <div class="navigation">
+        <div class="title-nav">Wave of Relief</div>
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="#">Help Us</a>
+        <a href="history.html">History</a>
+        <a href="active-crisis.html">Active Crisis</a>
+    </div>
+    </nav>
+
+    <section class="wayanad">
+        <img class="wayanad-bg" src="wayanad.png">
+        <h1>Wayanad</h1>
+        <p>The lush green lands of Wayanad are now ruined by landslides.
+            <br>Do your part of being a human and help the affected.
+        </p>
+    </section>
+
+    <section class="content-container">
+        <div class="content">
+        On 30 July 2024, heavy rainfall triggered landslides in the Wayanad district of Kerala, India. At the time of writing, the confirmed loss of life has reached 392 people, with a further 150 people reported to be missing. In addition, there were at least 273 injuries.
+        <br>
+        <br>
+        <br>
+
+        The event is sufficiently significant that it has its own Wikipedia page, which reports 570 mm of rainfall in the two days leading up to the tragedy. The area affected, including the villages of Punjirimattom, Mundakkai, Chooralmala, Attamala, Meppadi and Kunhome, consists of tea farms built on steep slopes. Many of the people killed were worked in the farms, or were members of their families.
+    </div>
+
+    <div class="numbers">
+        <h3>Help save lives by donating now!</h3>
+        <a href="#" class="donate">HELP NOW</a>
+    </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menuIcon');
+            const nav = document.getElementById('nav');
+    
+            menuIcon.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
